@@ -7,7 +7,10 @@
         <entry key="app/src/main/res/drawable/ic_baseline_videocam_24.xml" value="0.1685" />
         <entry key="app/src/main/res/drawable/ic_launcher_background.xml" value="0.24" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.19610507246376813" />
-        <entry key="app/src/main/res/layout/fragment_icon.xml" value="0.19610507246376813" />
+        <entry key="app/src/main/res/layout/activity_video.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/fragment_icon.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/fragment_video.xml" value="0.34745635986328127" />
+        <entry key="app/src/main/res/layout/item.xml" value="0.1" />
       </map>
     </option>
   </component>

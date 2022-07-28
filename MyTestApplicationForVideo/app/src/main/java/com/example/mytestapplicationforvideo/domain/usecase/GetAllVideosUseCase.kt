@@ -7,7 +7,7 @@ import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.withContext
 import javax.inject.Inject
 
-class GetAllVideos @Inject constructor(
+class GetAllVideosUseCase @Inject constructor(
     private val userDataRepository: VideoRepository,
     private val dispatcher: CoroutineDispatcher = Dispatchers.IO
 ) {
