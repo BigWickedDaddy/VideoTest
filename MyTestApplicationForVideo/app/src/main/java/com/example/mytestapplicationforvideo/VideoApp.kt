@@ -7,10 +7,10 @@ class VideoApp: Application() {
     lateinit var appComponent: AppComponent
         private set
 
-    override fun onCreate() {
-        super.onCreate()
-        appComponent = DaggerAppComponent.builder()
-            .application(this)
-            .build()
-    }
+//    override fun onCreate() {
+//        super.onCreate()
+//        appComponent = DaggerAppComponent.builder()
+//            .application(this)
+//            .build()
+//    }
 }
