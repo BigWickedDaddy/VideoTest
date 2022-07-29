@@ -14,10 +14,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.MyTestApplicationForVideo"
+        android:name=".VideoApp"
         tools:targetApi="31">
-        <activity
-            android:name=".presentation.activities.VideoActivity"
-            android:exported="false" />
         <activity
             android:name=".presentation.activities.MainActivity"
             android:exported="true">

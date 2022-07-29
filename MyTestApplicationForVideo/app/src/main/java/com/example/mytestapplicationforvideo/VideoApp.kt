@@ -5,6 +5,7 @@ import com.example.mytestapplicationforvideo.di.AppComponent
 import com.example.mytestapplicationforvideo.di.DaggerAppComponent
 
 class VideoApp: Application() {
+
     lateinit var appComponent: AppComponent
         private set
 

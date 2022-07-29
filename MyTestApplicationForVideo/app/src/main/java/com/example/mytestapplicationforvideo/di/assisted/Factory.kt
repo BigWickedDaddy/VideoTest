@@ -7,10 +7,7 @@ import dagger.assisted.AssistedFactory
 
 @AssistedFactory
 interface Factory {
-
     fun provideVideoAdapter(
-        @Assisted("glide") glide: RequestManager,
-        @Assisted("onItemClickedAction") onItemClickedAction: (String) -> Unit,
-    ): VideoAdapter
-
+        @Assisted("glide") glide: () -> RequestManager
+    ):VideoAdapter
 }
