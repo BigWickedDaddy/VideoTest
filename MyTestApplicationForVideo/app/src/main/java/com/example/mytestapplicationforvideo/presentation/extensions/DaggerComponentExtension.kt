@@ -1,4 +1,4 @@
-package com.example.mytestapplicationforvideo.presentation
+package com.example.mytestapplicationforvideo.presentation.extensions
 
 import android.content.Context
 import com.example.mytestapplicationforvideo.VideoApp

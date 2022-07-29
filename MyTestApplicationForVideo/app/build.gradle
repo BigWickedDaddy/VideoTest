@@ -35,6 +35,9 @@ android {
     kotlinOptions {
         jvmTarget = '1.8'
     }
+    kapt {
+        generateStubs = true
+    }
 }
 
 dependencies {
@@ -70,6 +73,10 @@ dependencies {
     implementation "androidx.lifecycle:lifecycle-viewmodel-ktx:${lifecycle}"
     implementation "androidx.lifecycle:lifecycle-livedata-ktx:${lifecycle}"
 
+    implementation "io.reactivex.rxjava3:rxjava:3.1.4"
+    implementation 'io.reactivex.rxjava3:rxkotlin:3.0.1'
+    implementation 'io.reactivex.rxjava3:rxandroid:3.0.0'
+
     def dagger = "2.42"
     implementation "com.google.dagger:dagger:${dagger}"
     implementation "com.google.dagger:dagger-android:${dagger}"
@@ -82,11 +89,11 @@ dependencies {
     implementation "com.github.bumptech.glide:glide:${glide}"
     kapt "com.github.bumptech.glide:compiler:${glide}"
 
-
-    implementation "io.reactivex.rxjava3:rxjava:3.1.4"
-    implementation 'io.reactivex.rxjava3:rxkotlin:3.0.1'
-    implementation 'io.reactivex.rxjava3:rxandroid:3.0.0'
-
+    def moxy = "2.2.2"
+    implementation "com.github.moxy-community:moxy:$moxy"
+    implementation "com.github.moxy-community:moxy-androidx:$moxy"
+    implementation "com.github.moxy-community:moxy-ktx:$moxy"
+    kapt "com.github.moxy-community:moxy-compiler:$moxy"
 
     testImplementation 'junit:junit:4.13.2'
     androidTestImplementation 'androidx.test.ext:junit:1.1.3'

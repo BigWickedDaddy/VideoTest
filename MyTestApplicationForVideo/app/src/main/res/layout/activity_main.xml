@@ -27,17 +27,17 @@
             android:id="@+id/toolbar_title" />
     </androidx.appcompat.widget.Toolbar>
 
-    <ImageButton
-        android:id="@+id/btnIcon"
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/fragment_container"
+        android:name="androidx.navigation.fragment.NavHostFragment"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:background="@color/dak_green"
-        android:src="@drawable/ic_baseline_videocam_24"
-        android:text="@string/hello_blank_fragment"
+        app:defaultNavHost="true"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/main_toolbar" />
+        app:layout_constraintTop_toBottomOf="@+id/main_toolbar"
+        app:navGraph="@navigation/navgraph" />
 
 
 
